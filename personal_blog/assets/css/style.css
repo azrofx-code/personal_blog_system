@@ -1,0 +1,131 @@
+:root {
+    --primary-blue: #0061ff;
+    --accent-cyan: #60efff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --body-bg: #f8fafc;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding-top: 0;
+    letter-spacing: -0.01em;
+}
+
+/* ===== NAVBAR FIX ===== */
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-dark .nav-link:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 97, 255, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/* ===== POST TITLES ===== */
+
+.card-title a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+    color: var(--primary-blue);
+}
+
+/* ===== BUTTONS ===== */
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 97, 255, 0.3);
+}
+
+/* ===== FORMS ===== */
+
+.form-control {
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 97, 255, 0.15);
+}
+
+/* ===== SIDEBAR ===== */
+
+.list-unstyled li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 6px 0;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.list-unstyled li a:hover {
+    color: var(--primary-blue);
+    padding-left: 8px;
+}
+
+/* ===== TABLES (ADMIN) ===== */
+
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 2.5rem 0;
+}
